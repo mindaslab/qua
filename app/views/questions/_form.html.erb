@@ -1,0 +1,29 @@
+<%= form_for @question, :html => { :class => 'form-horizontal' } do |f| %>
+  <% if @question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@question.errors.count, "error") %> prohibited
+          this question from being saved:</h2>
+      <ul>
+      <% @question.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <fieldset>
+    <legend>Type your Question</legend>
+
+    <div class="control-group">
+      <%= f.label :content, "Question", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :content, :class => 'text_area big-width', rows: 15 %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', questions_path, :class => 'btn' %>
+    </div>
+  </fieldset>
+<% end %>

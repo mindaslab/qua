@@ -1,0 +1,22 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.question{
+  
+  margin-top: 2em;
+  margin-bottom: 2em;
+  
+  div.action{
+    margin-top: 1em;
+  }
+  
+  p{
+    font-size: 12pt;
+    line-height: 125%;
+  }
+}
+
+textarea.big-width{
+  width: 80%;
+}
