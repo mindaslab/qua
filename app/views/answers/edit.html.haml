@@ -1,0 +1,9 @@
+= form_for([@question, @answer], :html=>{:class => "form-horizontal"}) do |f|
+  %fieldset
+    %legend=  "Edit Article"
+    .control-group
+      = f.label :content, "Answer", class: "control-label"
+      .controls
+        = f.text_area :content, class: 'text_area big-width', rows: 15
+    .form-actions
+      = f.submit "Edit Comment", class: "btn btn-primary" 

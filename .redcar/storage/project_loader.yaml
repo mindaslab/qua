@@ -1,3 +1,8 @@
 --- 
 open_files: 
-  - Gemfile
+  - app/views/questions/_form.html.erb
+  - app/views/questions/show.html.erb
+  - app/models/question.rb
+  - app/models/answer.rb
+  - app/controllers/answers_controller.rb
+  - app/controllers/questions_controller.rb

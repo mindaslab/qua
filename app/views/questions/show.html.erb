@@ -1,13 +1,14 @@
-<p>
-  <%= @question.content %>
-</p>
-
-<div>
-  <%= link_to 'Back', questions_path, :class => 'btn btn-mini'  %>
-  <%= link_to 'Edit', edit_question_path(@question), :class => 'btn btn-mini' %>
-  <%= link_to 'Delete', question_path(@question), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger btn-mini' %>
+<h1 class="grey-heading">Question</h1>
+<div class="question">
+  <p><%= @question.content %></p>
+  <div class="action">
+    <%= link_to 'Back', questions_path, :class => 'btn btn-mini'  %>
+    <%= link_to 'Edit', edit_question_path(@question), :class => 'btn btn-mini' %>
+    <%= link_to 'Delete', question_path(@question), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger btn-mini' %>
+  </div>
 </div>
 
+<h1 class="grey-heading">Answers</h1>
 <%= render @question.answers %>
 
 <%= form_for([@question, @question.answers.build], :html => { :class => 'form-horizontal' }) do |f| %>

@@ -55,6 +55,14 @@
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
+        <% if notice %>
+          <div class="alert fade in">
+            <a href="#" data-dismiss="alert" class="close">×</a>
+            <ul>
+              <%= raw notice %>
+            </ul>
+          </div>
+        <% end %>
           <%= yield %>
         </div>
       </div><!--/row-->

@@ -3,9 +3,6 @@ cursor_positions:
   - :path: app/assets/stylesheets/scaffolds.css.scss
     :cursor_offset: 811
     :timestamp: 2012-04-03 13:21:44 +05:30
-  - :path: app/views/questions/show.html.erb
-    :cursor_offset: 392
-    :timestamp: 2012-04-03 14:51:40 +05:30
   - :path: config/routes.rb
     :cursor_offset: 80
     :timestamp: 2012-04-03 13:13:02 +05:30
@@ -15,20 +12,9 @@ cursor_positions:
   - :path: app/views/questions/new.html.erb
     :cursor_offset: 0
     :timestamp: 2012-04-03 11:08:19 +05:30
-  - :path: app/views/questions/_form.html.erb
-    :cursor_offset: 64
-    :timestamp: 2012-04-03 13:23:52 +05:30
-    :selection_offset: 24
-    :block_selection_mode: false
-  - :path: app/models/answer.rb
-    :cursor_offset: 73
-    :timestamp: 2012-04-03 12:29:20 +05:30
   - :path: app/views/answers/_answer.html.haml
     :cursor_offset: 28
     :timestamp: 2012-04-03 14:48:53 +05:30
-  - :path: app/models/question.rb
-    :cursor_offset: 166
-    :timestamp: 2012-04-03 14:50:13 +05:30
   - :path: db/migrate/20120403065515_create_answers.rb
     :cursor_offset: 91
     :timestamp: 2012-04-03 12:25:15 +05:30
@@ -41,10 +27,29 @@ cursor_positions:
   - :path: app/views/questions/_question.html.haml
     :cursor_offset: 327
     :timestamp: 2012-04-03 12:12:16 +05:30
-  - :path: app/controllers/questions_controller.rb
-    :cursor_offset: 364
-    :timestamp: 2012-04-03 11:44:44 +05:30
   - :path: Gemfile
     :cursor_offset: 503
     :timestamp: 2012-04-02 20:49:13 +05:30
+  - :path: app/views/questions/show.html.erb
+    :cursor_offset: 325
+    :timestamp: 2012-04-03 15:09:27 +05:30
+  - :path: app/views/questions/_form.html.erb
+    :cursor_offset: 666
+    :timestamp: 2012-04-03 13:23:52 +05:30
+    :selection_offset: 625
+    :block_selection_mode: false
+  - :path: app/models/question.rb
+    :cursor_offset: 38
+    :timestamp: 2012-04-03 14:50:13 +05:30
+    :selection_offset: 117
+    :block_selection_mode: false
+  - :path: app/models/answer.rb
+    :cursor_offset: 91
+    :timestamp: 2012-04-03 15:05:31 +05:30
+  - :path: app/controllers/answers_controller.rb
+    :cursor_offset: 67
+    :timestamp: 2012-04-03 19:36:45 +05:30
+  - :path: app/controllers/questions_controller.rb
+    :cursor_offset: 364
+    :timestamp: 2012-04-03 11:44:44 +05:30
 files_to_retain: 0

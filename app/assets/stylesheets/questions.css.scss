@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div.question{
+div.question, div.answer{
   
   margin-top: 2em;
   margin-bottom: 2em;
@@ -19,4 +19,13 @@ div.question{
 
 textarea.big-width{
   width: 80%;
+}
+
+$heaing_color: #999999;
+
+h1.grey-heading{
+  color: $heaing_color;
+  font-size: 16pt;
+  padding-bottom: 3px;
+  border-bottom: $heaing_color 2px dotted;
 }
