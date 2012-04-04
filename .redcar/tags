@@ -1,4 +1,4 @@
-1333471504
+1333530227
 Answer	/home/karthikeyan/qua/app/models/answer.rb	class Answer 
 AnswerTest	/home/karthikeyan/qua/test/unit/answer_test.rb	class AnswerTest 
 AnswersController	/home/karthikeyan/qua/app/controllers/answers_controller.rb	class AnswersController 
@@ -11,6 +11,7 @@ ApplicationHelper	/home/karthikeyan/qua/app/helpers/application_helper.rb	module
 BrowsingTest	/home/karthikeyan/qua/test/performance/browsing_test.rb	class BrowsingTest 
 CreateAnswers	/home/karthikeyan/qua/db/migrate/20120403065515_create_answers.rb	class CreateAnswers 
 CreateQuestions	/home/karthikeyan/qua/db/migrate/20120403053339_create_questions.rb	class CreateQuestions 
+DeviseCreateUsers	/home/karthikeyan/qua/db/migrate/20120404044112_devise_create_users.rb	class DeviseCreateUsers 
 Qua	/home/karthikeyan/qua/config/application.rb	module Qua
 Question	/home/karthikeyan/qua/app/models/question.rb	class Question 
 QuestionTest	/home/karthikeyan/qua/test/unit/question_test.rb	class QuestionTest 
@@ -19,8 +20,11 @@ QuestionsControllerTest	/home/karthikeyan/qua/test/functional/questions_controll
 QuestionsHelper	/home/karthikeyan/qua/app/helpers/questions_helper.rb	module QuestionsHelper
 QuestionsHelperTest	/home/karthikeyan/qua/test/unit/helpers/questions_helper_test.rb	class QuestionsHelperTest 
 TestCase	/home/karthikeyan/qua/test/test_helper.rb	class ActiveSupport::TestCase
+User	/home/karthikeyan/qua/app/models/user.rb	class User 
+UserTest	/home/karthikeyan/qua/test/unit/user_test.rb	class UserTest 
 change	/home/karthikeyan/qua/db/migrate/20120403053339_create_questions.rb	  def change
 change	/home/karthikeyan/qua/db/migrate/20120403065515_create_answers.rb	  def change
+change	/home/karthikeyan/qua/db/migrate/20120404044112_devise_create_users.rb	  def change
 create	/home/karthikeyan/qua/app/controllers/questions_controller.rb	  def create
 create	/home/karthikeyan/qua/app/controllers/answers_controller.rb	  def create
 destroy	/home/karthikeyan/qua/app/controllers/questions_controller.rb	  def destroy

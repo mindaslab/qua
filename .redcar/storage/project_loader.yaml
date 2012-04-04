@@ -1,8 +1,6 @@
 --- 
 open_files: 
-  - app/views/questions/_form.html.erb
-  - app/views/questions/show.html.erb
-  - app/models/question.rb
-  - app/models/answer.rb
-  - app/controllers/answers_controller.rb
-  - app/controllers/questions_controller.rb
+  - Gemfile
+  - db/migrate/20120404044112_devise_create_users.rb
+  - config/environments/development.rb
+  - config/routes.rb
