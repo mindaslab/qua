@@ -1,6 +1,6 @@
 --- 
 open_files: 
-  - Gemfile
-  - db/migrate/20120404044112_devise_create_users.rb
-  - config/environments/development.rb
-  - config/routes.rb
+  - app/controllers/answers_controller.rb
+  - app/controllers/questions_controller.rb
+  - app/views/questions/show.html.erb
+  - app/views/users/_login.html.haml

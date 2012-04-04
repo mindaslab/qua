@@ -43,21 +43,12 @@ cursor_positions:
   - :path: app/views/questions/_question.html.haml
     :cursor_offset: 327
     :timestamp: 2012-04-03 12:12:16 +05:30
-  - :path: app/controllers/questions_controller.rb
-    :cursor_offset: 537
-    :timestamp: 2012-04-03 11:44:44 +05:30
-  - :path: app/controllers/answers_controller.rb
-    :cursor_offset: 437
-    :timestamp: 2012-04-03 21:38:59 +05:30
   - :path: app/views/answers/_answer.html.haml
     :cursor_offset: 270
     :timestamp: 2012-04-03 21:34:50 +05:30
   - :path: app/views/answers/edit.html.haml
     :cursor_offset: 301
     :timestamp: 2012-04-03 20:01:06 +05:30
-  - :path: app/views/questions/show.html.erb
-    :cursor_offset: 461
-    :timestamp: 2012-04-03 21:14:43 +05:30
   - :path: public/index.html
     :cursor_offset: 0
     :timestamp: 2012-04-02 20:39:52 +05:30
@@ -76,9 +67,6 @@ cursor_positions:
   - :path: app/models/user.rb
     :cursor_offset: 315
     :timestamp: 2012-04-04 13:20:42 +05:30
-  - :path: app/views/users/_login.html.haml
-    :cursor_offset: 0
-    :timestamp: 2012-04-04 12:54:25 +05:30
   - :path: app/views/layouts/questions.html.erb
     :cursor_offset: 2097
     :timestamp: 2012-04-04 12:25:51 +05:30
@@ -86,12 +74,26 @@ cursor_positions:
     :cursor_offset: 101
     :timestamp: 2012-04-04 10:42:23 +05:30
   - :path: config/environments/development.rb
-    :cursor_offset: 1710
-    :timestamp: 2012-04-04 10:38:46 +05:30
+    :cursor_offset: 0
+    :timestamp: 2012-04-04 14:33:30 +05:30
   - :path: db/migrate/20120404044112_devise_create_users.rb
     :cursor_offset: 351
     :timestamp: 2012-04-04 10:14:44 +05:30
   - :path: Gemfile
     :cursor_offset: 558
     :timestamp: 2012-04-04 10:08:13 +05:30
+  - :path: app/controllers/answers_controller.rb
+    :cursor_offset: 135
+    :timestamp: 2012-04-04 19:34:04 +05:30
+  - :path: app/controllers/questions_controller.rb
+    :cursor_offset: 52
+    :timestamp: 2012-04-04 19:33:02 +05:30
+  - :path: app/views/questions/show.html.erb
+    :cursor_offset: 1202
+    :timestamp: 2012-04-04 19:45:12 +05:30
+  - :path: app/views/users/_login.html.haml
+    :cursor_offset: 202
+    :timestamp: 2012-04-04 12:54:25 +05:30
+    :selection_offset: 223
+    :block_selection_mode: false
 files_to_retain: 0

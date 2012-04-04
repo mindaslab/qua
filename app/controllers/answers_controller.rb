@@ -1,6 +1,8 @@
 class AnswersController < ApplicationController
-  layout 'questions'
+  
+  before_filter :authenticate_user!
   before_filter :find_qua, :except=>[:create]
+  
   def create
     @question = Question.find(params[:question_id])
     @answer = @question.answers.create(params[:answer])

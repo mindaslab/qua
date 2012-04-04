@@ -11,17 +11,23 @@
 <h1 class="grey-heading">Answers</h1>
 <%= render @question.answers %>
 
-<%= form_for([@question, @question.answers.build], :html => { :class => 'form-horizontal' }) do |f| %>
-<fieldset>
-  <legend>Add an answer</legend>
-  <div class="control-group">
-    <%= f.label :content, "Answer", class: "control-label" %>
-    <div class="controls">
-      <%= f.text_area :content, :class => 'text_area big-width', rows: 15 %>
+
+<% if user_signed_in? %>
+  <%= form_for([@question, @question.answers.build], :html => { :class => 'form-horizontal' }) do |f| %>
+  <fieldset>
+    <legend>Add an answer</legend>
+    <div class="control-group">
+      <%= f.label :content, "Answer", class: "control-label" %>
+      <div class="controls">
+        <%= f.text_area :content, :class => 'text_area big-width', rows: 15 %>
+      </div>
+      <div class="form-actions">
+         <%= f.submit "Add Answer", class: "btn btn-primary" %>
+      </div>
     </div>
-    <div class="form-actions">
-       <%= f.submit "Add Answer", class: "btn btn-primary" %>
-    </div>
-  </div>
-</fieldset>
-<% end %>
+  </fieldset>
+  <% end %>
+<% else %>
+<h1 class="grey-heading">Add an Answers</h1>
+  <%= link_to "Login to Add Answer", new_user_session_path, class:"btn btn-success btn-large margin-top" %>
+<% end%>
