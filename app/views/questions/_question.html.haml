@@ -2,5 +2,6 @@
   %p= question.content
   .action
     = link_to "Answers", question, class: "btn btn-success white-text btn-mini"
-    = link_to "Edit", edit_question_path(question), class: "btn btn-warning white-text btn-mini"
-    = link_to "Delete", question_path(question), method: :delete, confirm: "Are you sure?", class: "btn btn-danger white-text btn-mini"
+    -if qustion.user == current_user
+      = link_to "Edit", edit_question_path(question), class: "btn btn-warning white-text btn-mini"
+      = link_to "Delete", question_path(question), method: :delete, confirm: "Are you sure?", class: "btn btn-danger white-text btn-mini"

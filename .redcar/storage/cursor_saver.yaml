@@ -6,9 +6,6 @@ cursor_positions:
   - :path: app/views/questions/new.html.erb
     :cursor_offset: 0
     :timestamp: 2012-04-03 11:08:19 +05:30
-  - :path: db/migrate/20120403065515_create_answers.rb
-    :cursor_offset: 91
-    :timestamp: 2012-04-03 12:25:15 +05:30
   - :path: app/views/questions/index.html.erb
     :cursor_offset: 95
     :timestamp: 2012-04-03 12:15:45 +05:30
@@ -17,17 +14,9 @@ cursor_positions:
     :timestamp: 2012-04-03 13:23:52 +05:30
     :selection_offset: 625
     :block_selection_mode: false
-  - :path: app/models/question.rb
-    :cursor_offset: 38
-    :timestamp: 2012-04-03 14:50:13 +05:30
-    :selection_offset: 117
-    :block_selection_mode: false
   - :path: .gitignore
     :cursor_offset: 322
     :timestamp: 2012-04-03 22:15:04 +05:30
-  - :path: app/models/answer.rb
-    :cursor_offset: 91
-    :timestamp: 2012-04-03 15:05:31 +05:30
   - :path: app/assets/stylesheets/questions.css.scss
     :cursor_offset: 124
     :timestamp: 2012-04-03 21:22:30 +05:30
@@ -64,9 +53,6 @@ cursor_positions:
   - :path: config/environment.rb
     :cursor_offset: 146
     :timestamp: 2012-04-04 13:40:21 +05:30
-  - :path: app/models/user.rb
-    :cursor_offset: 315
-    :timestamp: 2012-04-04 13:20:42 +05:30
   - :path: app/views/layouts/questions.html.erb
     :cursor_offset: 2097
     :timestamp: 2012-04-04 12:25:51 +05:30
@@ -88,12 +74,33 @@ cursor_positions:
   - :path: app/controllers/questions_controller.rb
     :cursor_offset: 52
     :timestamp: 2012-04-04 19:33:02 +05:30
+  - :path: db/migrate/20120405044352_add_user_id_to_questions.rb
+    :cursor_offset: 143
+    :timestamp: 2012-04-05 10:15:07 +05:30
+  - :path: config/initializers/devise.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-04 10:10:00 +05:30
+  - :path: app/models/answer.rb
+    :cursor_offset: 59
+    :timestamp: 2012-04-05 10:39:38 +05:30
+  - :path: app/models/question.rb
+    :cursor_offset: 38
+    :timestamp: 2012-04-05 10:39:19 +05:30
+    :selection_offset: 61
+    :block_selection_mode: false
+  - :path: app/models/user.rb
+    :cursor_offset: 545
+    :timestamp: 2012-04-05 10:23:15 +05:30
+  - :path: db/migrate/20120405044352_add_user_id_to_questions_and_answers.rb
+    :cursor_offset: 287
+    :timestamp: 2012-04-05 10:19:08 +05:30
+  - :path: db/migrate/20120403065515_create_answers.rb
+    :cursor_offset: 170
+    :timestamp: 2012-04-03 12:25:15 +05:30
+  - :path: app/views/users/_login.html.haml
+    :cursor_offset: 285
+    :timestamp: 2012-04-04 12:54:25 +05:30
   - :path: app/views/questions/show.html.erb
     :cursor_offset: 1202
     :timestamp: 2012-04-04 19:45:12 +05:30
-  - :path: app/views/users/_login.html.haml
-    :cursor_offset: 202
-    :timestamp: 2012-04-04 12:54:25 +05:30
-    :selection_offset: 223
-    :block_selection_mode: false
 files_to_retain: 0
