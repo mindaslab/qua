@@ -29,12 +29,6 @@ cursor_positions:
   - :path: app/assets/stylesheets/scaffolds.css.scss
     :cursor_offset: 811
     :timestamp: 2012-04-03 13:21:44 +05:30
-  - :path: app/views/questions/_question.html.haml
-    :cursor_offset: 327
-    :timestamp: 2012-04-03 12:12:16 +05:30
-  - :path: app/views/answers/_answer.html.haml
-    :cursor_offset: 270
-    :timestamp: 2012-04-03 21:34:50 +05:30
   - :path: app/views/answers/edit.html.haml
     :cursor_offset: 301
     :timestamp: 2012-04-03 20:01:06 +05:30
@@ -68,12 +62,6 @@ cursor_positions:
   - :path: Gemfile
     :cursor_offset: 558
     :timestamp: 2012-04-04 10:08:13 +05:30
-  - :path: app/controllers/answers_controller.rb
-    :cursor_offset: 135
-    :timestamp: 2012-04-04 19:34:04 +05:30
-  - :path: app/controllers/questions_controller.rb
-    :cursor_offset: 52
-    :timestamp: 2012-04-04 19:33:02 +05:30
   - :path: db/migrate/20120405044352_add_user_id_to_questions.rb
     :cursor_offset: 143
     :timestamp: 2012-04-05 10:15:07 +05:30
@@ -100,7 +88,19 @@ cursor_positions:
   - :path: app/views/users/_login.html.haml
     :cursor_offset: 285
     :timestamp: 2012-04-04 12:54:25 +05:30
+  - :path: app/controllers/answers_controller.rb
+    :cursor_offset: 288
+    :timestamp: 2012-04-05 11:31:11 +05:30
+  - :path: app/controllers/questions_controller.rb
+    :cursor_offset: 1010
+    :timestamp: 2012-04-05 11:31:19 +05:30
+  - :path: app/views/answers/_answer.html.haml
+    :cursor_offset: 356
+    :timestamp: 2012-04-05 11:40:56 +05:30
+  - :path: app/views/questions/_question.html.haml
+    :cursor_offset: 397
+    :timestamp: 2012-04-05 11:42:15 +05:30
   - :path: app/views/questions/show.html.erb
-    :cursor_offset: 1202
-    :timestamp: 2012-04-04 19:45:12 +05:30
+    :cursor_offset: 471
+    :timestamp: 2012-04-05 11:45:26 +05:30
 files_to_retain: 0

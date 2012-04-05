@@ -3,3 +3,5 @@
 <%= link_to 'Ask a Question', new_question_path, :class => 'btn btn-success margin-top' %>
 
 <%= render @questions %>
+
+<%= will_paginate @posts %>

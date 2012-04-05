@@ -1,4 +1,4 @@
-1333606527
+1333620554
 AddUserIdToQuestionsAndAnswers	/home/karthikeyan/qua/db/migrate/20120405044352_add_user_id_to_questions_and_answers.rb	class AddUserIdToQuestionsAndAnswers 
 Answer	/home/karthikeyan/qua/app/models/answer.rb	class Answer 
 AnswerTest	/home/karthikeyan/qua/test/unit/answer_test.rb	class AnswerTest 
@@ -36,6 +36,7 @@ edit	/home/karthikeyan/qua/app/controllers/questions_controller.rb	  def edit
 find_qua	/home/karthikeyan/qua/app/controllers/answers_controller.rb	  def find_qua
 index	/home/karthikeyan/qua/app/controllers/questions_controller.rb	  def index
 new	/home/karthikeyan/qua/app/controllers/questions_controller.rb	  def new
+question_must_belong_to_user	/home/karthikeyan/qua/app/controllers/questions_controller.rb	  def question_must_belong_to_user
 show	/home/karthikeyan/qua/app/controllers/questions_controller.rb	  def show
 test_homepage	/home/karthikeyan/qua/test/performance/browsing_test.rb	  def test_homepage
 update	/home/karthikeyan/qua/app/controllers/answers_controller.rb	  def update

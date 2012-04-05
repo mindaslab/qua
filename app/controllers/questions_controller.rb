@@ -1,10 +1,11 @@
 class QuestionsController < ApplicationController
   
   before_filter :authenticate_user!, :only=>[:new, :edit, :create, :update, :destroy]
+  before_filter :question_must_belong_to_user, :except=>[:index, :show, :new, :create]
   # GET /questions
   # GET /questions.json  
   def index
-    @questions = Question.all
+    @questions = Question.order('created_at desc').paginate(:page => params[:page], :per_page => 50)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -16,6 +17,7 @@ class QuestionsController < ApplicationController
   # GET /questions/1.json
   def show
     @question = Question.find(params[:id])
+    @answers = @question.answers.paginate(:page => params[:page], :per_page => 20)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -36,7 +38,7 @@ class QuestionsController < ApplicationController
 
   # GET /questions/1/edit
   def edit
-    @question = Question.find(params[:id])
+    
   end
 
   # POST /questions
@@ -58,7 +60,6 @@ class QuestionsController < ApplicationController
   # PUT /questions/1
   # PUT /questions/1.json
   def update
-    @question = Question.find(params[:id])
 
     respond_to do |format|
       if @question.update_attributes(params[:question])
@@ -74,12 +75,17 @@ class QuestionsController < ApplicationController
   # DELETE /questions/1
   # DELETE /questions/1.json
   def destroy
-    @question = Question.find(params[:id])
     @question.destroy
 
     respond_to do |format|
       format.html { redirect_to questions_url }
       format.json { head :no_content }
     end
+  end
+  
+  private
+  def question_must_belong_to_user
+    @question = Question.find(params[:id])
+    redirect_to(@question, notice: "You cannot edit this question") if(@question.user != current_user)
   end
 end

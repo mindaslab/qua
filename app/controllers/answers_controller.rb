@@ -35,5 +35,7 @@ class AnswersController < ApplicationController
   def find_qua
     @question = Question.find(params[:question_id])
     @answer = @question.answers.find(params[:id])
-  end    
+    redirect_to :back, "You cannot edit this answer" if @answer.user != current_user
+  end
+  
 end

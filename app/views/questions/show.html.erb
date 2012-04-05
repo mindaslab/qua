@@ -11,8 +11,11 @@
 </div>
 
 <h1 class="grey-heading">Answers</h1>
-<%= render @question.answers %>
+<%= render @answers %>
 
+<div>
+<%= will_paginate @answers %>
+</div>
 
 <% if user_signed_in? %>
   <%= form_for([@question, @question.answers.build], :html => { :class => 'form-horizontal' }) do |f| %>
