@@ -1,7 +1,0 @@
---- 
-open_files: 
-  - app/controllers/answers_controller.rb
-  - app/controllers/questions_controller.rb
-  - app/views/answers/_answer.html.haml
-  - app/views/questions/_question.html.haml
-  - app/views/questions/show.html.erb
