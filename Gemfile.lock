@@ -143,6 +143,6 @@ DEPENDENCIES
   redcarpet
   sass-rails (~> 3.2.3)
   sqlite3
-  twitter-bootstrap-rails
+  twitter-bootstrap-rails (~> 2.0.5)
   uglifier (>= 1.0.3)
   will_paginate (~> 3.0)

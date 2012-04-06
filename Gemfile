@@ -26,7 +26,7 @@ gem 'jquery-rails'
 gem "haml"
 
 # for twitter bootstrap
-gem "twitter-bootstrap-rails"
+gem "twitter-bootstrap-rails", "~> 2.0.5"
 
 # devise for authentication
 gem "devise"
