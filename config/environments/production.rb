@@ -19,9 +19,6 @@ Qua::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-  
-  # for devise conflict
-  config.assets.initialize_on_precompile = false # possible fix to less bug 
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
