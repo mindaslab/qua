@@ -52,11 +52,14 @@
                 <li><%= link_to "Link2", "/path2"  %></li>
                 <li><%= link_to "Link3", "/path3"  %></li>
               <li class="nav-header">User</li>
-              <li><%= render partial: "users/login" %>  
+              <li><%= render partial: "users/login" %>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
+          <div class="right">
+            <%= render :partial=>'questions/search_form' %>
+          </div>
         <% if notice %>
           <div class="alert fade in">
             <a href="#" data-dismiss="alert" class="close">×</a>

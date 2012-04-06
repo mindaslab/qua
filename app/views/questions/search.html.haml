@@ -1,0 +1,8 @@
+%h1.grey-heading
+  = "Search result for  #{params[:q][:content_cont]}"
+
+.search-result
+  = render @questions
+
+%div
+  = will_paginate @questions
