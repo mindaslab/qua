@@ -1,6 +1,7 @@
 .answer
-  %p= answer.content
+  %div= markdown answer.content
   %p
-    -if answer.user = current_user 
+    -if answer.user == current_user
       = link_to "Edit", edit_question_answer_path(answer.question, answer), class: "btn btn-warning btn-mini"
       = link_to "Delete", question_answer_path(answer.question, answer), method: :delete, class:"btn btn-danger btn-mini", confirm: "Do you really want to delete this Answer?"
+  %hr

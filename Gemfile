@@ -37,6 +37,9 @@ gem 'will_paginate', '~> 3.0'
 # for search
 gem "ransack"
 
+# for markdown
+gem "redcarpet"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

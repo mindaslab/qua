@@ -1,5 +1,5 @@
 .question
-  %p= question.content
+  %div= markdown question.content
   .action
     = link_to "Answers", question, class: "btn btn-success white-text btn-mini"
     -if question.user == current_user

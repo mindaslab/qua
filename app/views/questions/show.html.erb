@@ -1,6 +1,6 @@
 <h1 class="grey-heading">Question</h1>
 <div class="question">
-  <p><%= @question.content %></p>
+  <div><%= markdown @question.content %></div>
   <div class="action">
     <% if @question.user == current_user %>
       <%= link_to 'Edit', edit_question_path(@question), :class => 'btn btn-mini' %>
