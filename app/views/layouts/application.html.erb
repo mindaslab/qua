@@ -30,13 +30,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Qua</a>
+          <%= link_to "Qua", questions_path, class: "brand" %>
           <div class="container-fluid nav-collapse">
+            <!--
             <ul class="nav">
                 <li><%= link_to "Link1", "/path1"  %></li>
-                <li><%= link_to "Link2", "/path2"  %></li>
-                <li><%= link_to "Link3", "/path3"  %></li>
             </ul>
+          -->
+            <%= render :partial=>'questions/search_form' %>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -47,19 +48,15 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-                <li><%= link_to "Link1", "/path1"  %></li>
-                <li><%= link_to "Link2", "/path2"  %></li>
-                <li><%= link_to "Link3", "/path3"  %></li>
-              <li class="nav-header">User</li>
+              <li class="nav-header">Qua</li>
+                <li><%= link_to "Questions", questions_path  %></li>
+                <li><%= link_to "Ask a Question", new_question_path  %></li>
+              <li class="nav-header">You!</li>
               <li><%= render partial: "users/login" %>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
-          <div class="right">
-            <%= render :partial=>'questions/search_form' %>
-          </div>
         <% if notice %>
           <div class="alert fade in">
             <a href="#" data-dismiss="alert" class="close">×</a>
@@ -73,7 +70,8 @@
       </div><!--/row-->
 
       <footer>
-        <p>&copy; Company 2012</p>
+        <hr />
+        <%= link_to(image_tag("http://www.initializr.com/front/img/github-logo.png", width: "100px", height: "200px"), "http://github.com/mindaslab/qua", class: "image")  %>
       </footer>
 
     </div> <!-- /container -->

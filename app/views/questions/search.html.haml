@@ -1,8 +1,7 @@
-%h1.grey-heading
-  = "Search result for  #{params[:q][:content_cont]}"
+%h1.grey-heading= "Search result for  #{params[:q][:content_cont]}"
 
-.search-result
-  = render @questions
+%div= link_to 'Ask a Question', new_question_path, :class => 'btn btn-success margin-top'
 
-%div
-  = will_paginate @questions
+.search-result= render @questions
+
+%div= will_paginate @questions

@@ -1,6 +1,5 @@
 class QuestionsController < ApplicationController
   
-  before_filter :get_ransak_object
   before_filter :authenticate_user!, :only=>[:new, :edit, :create, :update, :destroy]
   before_filter :question_must_belong_to_user, :except=>[:index, :show, :new, :create, :search]
   # GET /questions
@@ -94,7 +93,5 @@ class QuestionsController < ApplicationController
     redirect_to(@question, notice: "You cannot edit this question") if(@question.user != current_user)
   end
   
-  def get_ransak_object
-    @q = Question.search(params[:q])
-  end
+  
 end

@@ -1,4 +1,0 @@
-<%= search_form_for(@q, :url=>{ action: :search, controller: :questions }, :html=> {:method => :get, class: "form-search"}) do |f| %>
-  <%= f.text_field(:content_cont, class: "search-query", placeholder: "Search Questions") %>
-  <%= f.submit "Search", class: "btn btn-primary" %>
-<% end %>
