@@ -58,5 +58,8 @@ module Qua
     
     # Email configuration
     config.action_mailer.default_url_options = { :host => "localhost:3000" }
+    
+    # for devise conflict
+    config.assets.initialize_on_precompile = false # possible fix to less bug
   end
 end
