@@ -37,3 +37,29 @@ a.margin-top{
 a.image:hover{
   background:  none;
 }
+
+// correcting will_paginate mis-display
+.pagination a.previous_page{
+  border-left: 1px solid #DDDDDD;
+}
+
+.pagination span, .pagination em{
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    float: left;
+    line-height: 34px;
+    padding: 0 14px;
+    text-decoration: none;
+}
+
+.pagination .current{
+  background: #99ffff;
+}
+
+// correction ends
