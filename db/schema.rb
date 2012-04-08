@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120405044352) do
+ActiveRecord::Schema.define(:version => 20120408084506) do
 
   create_table "answers", :force => true do |t|
     t.text     "content"
@@ -23,6 +23,16 @@ ActiveRecord::Schema.define(:version => 20120405044352) do
 
   add_index "answers", ["question_id"], :name => "index_answers_on_question_id"
   add_index "answers", ["user_id"], :name => "index_answers_on_user_id"
+
+  create_table "profiles", :force => true do |t|
+    t.string   "name"
+    t.text     "about_you"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "profiles", ["user_id"], :name => "index_profiles_on_user_id"
 
   create_table "questions", :force => true do |t|
     t.text     "content"

@@ -1,0 +1,22 @@
+<h1>/Profile</h1>
+
+<p>
+  <b>Name</b><br>
+  <%= @profile.name %>
+</p>
+
+<p>
+  <b>About you</b><br>
+  <%= @profile.about_you %>
+</p>
+
+<p>
+  <b>User</b><br>
+  <%= @profile.user_id %>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Back', profiles_path, :class => 'btn'  %>
+  <%= link_to 'Edit', edit_profile_path(@profile), :class => 'btn' %>
+  <%= link_to 'Delete', profile_path(@profile), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>

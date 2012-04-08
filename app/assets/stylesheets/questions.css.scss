@@ -38,6 +38,11 @@ a.image:hover{
   background:  none;
 }
 
+span.little-info{
+  font-size: 10px;
+  color: #aaaaaa;
+}
+
 // correcting will_paginate mis-display
 .pagination a.previous_page{
   border-left: 1px solid #DDDDDD;
