@@ -10,4 +10,12 @@ class User < ActiveRecord::Base
   has_many :questions, :dependent => :nullify
   has_many :answers, :dependent => :nullify
   has_one :profile, :dependent => :destroy
+  
+  def name
+    begin
+      profile.name
+    rescue
+      "Unknown"
+    end
+  end
 end
