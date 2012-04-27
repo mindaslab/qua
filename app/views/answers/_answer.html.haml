@@ -1,5 +1,5 @@
 .answer
-  %div= markdown answer.content
+  %div= raw qua_mark answer.content
   .action
     -if answer.user == current_user
       = link_to "Edit", edit_question_answer_path(answer.question, answer), class: "btn btn-warning btn-mini"

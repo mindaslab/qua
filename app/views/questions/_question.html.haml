@@ -1,5 +1,5 @@
 .question
-  %div= markdown question.content
+  %div= raw qua_mark question.content
   .action
     = link_to pluralize(question.answers.count, "Answer"), question, class: "btn btn-success white-text btn-mini"
     -if question.user == current_user

@@ -12,9 +12,9 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "application", "http://yandex.st/highlightjs/6.2/styles/default.min.css", :media => "all" %>
     <%= javascript_include_tag "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" %>
-
+    <%= javascript_include_tag "http://yandex.st/highlightjs/6.2/highlight.min.js" %>
     <!-- Le fav and touch icons -->
     <link href="images/favicon.ico" rel="shortcut icon">
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
@@ -81,6 +81,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+    <script>hljs.initHighlightingOnLoad();</script>
 
   </body>
 </html>
