@@ -20,6 +20,13 @@
         <%= f.text_area :content, :class => 'text_area big-width', rows: 15 %>
       </div>
     </div>
+    
+    <div class="control-group">
+      <%= f.label :content, raw("Tags<br />(Comma Seperated)"), :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :tag_string, :class => 'text_area big-width', rows: 5 %>
+      </div>
+    </div>
 
     <div class="form-actions">
       <%= f.submit nil, :class => 'btn btn-primary' %>
