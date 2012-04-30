@@ -33,8 +33,7 @@
           </a>
           <%= link_to "Qua", questions_path, class: "brand" %>
           <div class="container-fluid nav-collapse">
-            <%= render :partial=>'questions/button_nav' %>              
-            <%= render :partial=>'questions/search_form' %>
+            <%= render :partial=>'questions/button_nav' %>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -44,10 +43,6 @@
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">You</li>
-              <li><%= render partial: "users/login" %>
-            </ul>
             <hr />
             <div class="tag_search"><%= text_field_tag :ts, nil, placeholder:"Search Tags" %></div>
             <ul id="tag_list" class="nav nav-list">
