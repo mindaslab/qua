@@ -9,6 +9,7 @@ class Question < ActiveRecord::Base
   
   def tag_string=(string)
     tag_names = string.split(',').collect{|x| x.gsub(/\s+/, " ").strip.downcase}
+    tags.clear
     for tag_name in tag_names
       self.tags << Tag.find_or_create_by_name(tag_name)
     end
