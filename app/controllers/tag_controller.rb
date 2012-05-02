@@ -9,7 +9,7 @@ class TagController < ApplicationController
   end
   
   def search
-    @tags = Tag.where("name like ? ", "#{params[:s].downcase}%")
+    @tags = Tag.where("name like ? ", "#{params[:s].downcase}%").order(:name).limit(50)
     render :layout => false
   end
 end

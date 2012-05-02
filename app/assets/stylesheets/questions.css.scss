@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+div.question{
+	padding-bottom: 2em;
+	border-bottom: 1px solid #CACACA;
+}
+
 div.question, div.answer{
   
   margin-top: 2em;
