@@ -1,4 +1,8 @@
 Qua::Application.routes.draw do
+  get "tag/questions"
+  
+  get "tag/search"
+
   resources :profiles
 
   devise_for :users
@@ -9,6 +13,8 @@ Qua::Application.routes.draw do
       get 'search'
     end
   end
+  
+  match 'tag/:name' => 'tag#questions', :as => :tag
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

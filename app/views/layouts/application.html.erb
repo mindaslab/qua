@@ -43,9 +43,9 @@
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
-            <hr />
             <div class="tag_search"><%= text_field_tag :ts, nil, placeholder:"Search Tags" %></div>
             <ul id="tag_list" class="nav nav-list">
+              <%= render partial: 'questions/tag', collection: Tag.order(:name).limit(50) %>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

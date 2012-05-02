@@ -86,7 +86,7 @@ class QuestionsController < ApplicationController
   def search
     @questions = @q.result.paginate(:page => params[:page], :per_page => 50)
   end
-  
+      
   private
   def question_must_belong_to_user
     @question = Question.find(params[:id])

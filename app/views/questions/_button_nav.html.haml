@@ -1,6 +1,6 @@
 %table.pull-right
   %tr
-    %td= link_to  image_tag("http://openclipart.org/image/250px/svg_to_png/876/valessiobrito_Fire_June_holiday_s.png", width: "16px", height: "16px")+'Home', new_question_path, :class => 'btn btn-success margin-top' 
+    %td= link_to  image_tag("http://openclipart.org/image/250px/svg_to_png/876/valessiobrito_Fire_June_holiday_s.png", width: "16px", height: "16px")+'Home', questions_path, :class => 'btn btn-success margin-top' 
     %td= link_to 'Ask a Question', new_question_path, :class => 'btn btn-success margin-top'
-    %td= render partial: 'profile'
+    %td= render partial: 'questions/profile'
     %td= render :partial=>'questions/search_form'
