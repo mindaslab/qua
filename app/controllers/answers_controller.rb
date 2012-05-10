@@ -1,7 +1,7 @@
 class AnswersController < ApplicationController
   
   before_filter :authenticate_user!
-  before_filter :find_qua, :except=>[:create]
+  before_filter :find_qua, :except=>[:create, :show]
   
   def create
     @question = Question.find(params[:question_id])
