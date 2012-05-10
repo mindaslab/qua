@@ -31,6 +31,11 @@ class AnswersController < ApplicationController
     redirect_to @question, notice: "Answer Updated"
   end
   
+  def show
+    @question = Question.find(params[:question_id])
+    @answer = @question.answers.find(params[:id])
+  end
+  
   private
   def find_qua
     @question = Question.find(params[:question_id])

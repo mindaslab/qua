@@ -1,14 +1,4 @@
-<h1 class="grey-heading">Question</h1>
-<div class="question">
-  <div><%= raw qua_mark @question.content %></div>
-  <div class="action">
-    <% if @question.user == current_user %>
-      <%= link_to 'Edit', edit_question_path(@question), :class => 'btn btn-mini' %>
-      <%= link_to 'Delete', question_path(@question), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger btn-mini' %>
-    <% end %>
-    <span class="little-info"><%= @question.created_at.to_s(:short) %></span>
-  </div>
-</div>
+<%= render partial: 'question_view' %>
 
 <h1 class="grey-heading">Answers</h1>
 <%= render @answers %>
