@@ -1,0 +1,19 @@
+// Place all the styles related to the error controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.error-box{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  div.header, div.footer{
+    background: #bbbbbb;
+    color: #777777;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

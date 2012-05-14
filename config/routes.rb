@@ -1,4 +1,12 @@
 Qua::Application.routes.draw do
+  get "error/page_404"
+
+  get "error/page_not_found"
+
+  get "error/page_500"
+
+  get "error/page_422"
+
   get "tag/questions"
   
   get "tag/search"
