@@ -8,9 +8,9 @@ class Question < ActiveRecord::Base
   belongs_to :user
   
   def tag_string=(string)
-    tag_names = string.split(',').collect{|x| x.gsub(/\s+/, " ").strip.downcase}
+    tag_names = string.split(',').compact.collect{|x| x.gsub(/\s+/, " ").strip.downcase unless x.strip.empty? }
     tags.clear
-    for tag_name in tag_names
+    for tag_name in tag_names.compact[0..9]
       self.tags << Tag.find_or_create_by_name(tag_name)
     end
   end

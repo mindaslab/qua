@@ -4,7 +4,7 @@
   <div class="action">
     <ul class="tag-list">
     <% for tag in @question.tags %>
-    <li><%= link_to tag.name, {controller: :tag, action: :questions}, name: tag.name %></li>
+    <li><%= link_to tag.name, {controller: :tag, action: :questions, name: tag.name} %></li>
     <% end %>
   </ul>
     <% if @question.user == current_user %>
