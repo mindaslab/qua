@@ -7,8 +7,11 @@ class AnswersController < ApplicationController
     @question = Question.find(params[:question_id])
     @answer = @question.answers.create(params[:answer])
     @answer.user = current_user
-    @answer.save
-    redirect_to question_path(@question)
+    if @answer.save
+      redirect_to question_answer_path(@question, @answer), notice: "Your answer has been saved successfully"
+    else
+      redirect_to :back, notice: "Failed saving answer, either has nothing or is too long"
+    end
   end
   
   def destroy
