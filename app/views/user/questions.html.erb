@@ -1,2 +1,5 @@
-<h1>User#questions</h1>
-<p>Find me in app/views/user/questions.html.erb</p>
+<h1 class="grey-heading">My Questions</h1>
+
+<%= render @questions %>
+
+<%= will_paginate @questions %>

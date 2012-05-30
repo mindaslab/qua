@@ -1,17 +1,17 @@
 <h1 class="grey-heading">Question</h1>
 <div class="question">
-  <div><%= raw qua_mark @question.content %></div>
+  <div><%= raw qua_mark question_view.content %></div>
   <div class="action">
     <ul class="tag-list">
-    <% for tag in @question.tags %>
+    <% for tag in question_view.tags %>
     <li><%= link_to tag.name, {controller: :tag, action: :questions, name: tag.name} %></li>
     <% end %>
   </ul>
-    <%= link_to 'permalink', question_path(@question), class: 'btn btn-primary btn-mini'%>
-    <% if @question.user == current_user %>
-      <%= link_to 'edit', edit_question_path(@question), :class => 'btn btn-warning btn-mini' %>
-      <%= link_to 'delete', question_path(@question), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger btn-mini' %>
+    <%= link_to 'permalink', question_path(question_view), class: 'btn btn-primary btn-mini'%>
+    <% if question_view.user == current_user %>
+      <%= link_to 'edit', edit_question_path(question_view), :class => 'btn btn-warning btn-mini' %>
+      <%= link_to 'delete', question_path(question_view), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger btn-mini' %>
     <% end %>
-    <span class="little-info"><%= @question.created_at.to_s(:short) %></span>
+    <span class="little-info"><%= question_view.created_at.to_s(:short) %></span>
   </div>
 </div>
