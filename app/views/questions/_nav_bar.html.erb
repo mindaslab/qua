@@ -1,0 +1,15 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <%= link_to "Qua", questions_path, class: "brand" %>
+      <div class="container-fluid nav-collapse">
+        <%= render :partial=>'questions/button_nav' %>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>

@@ -12,9 +12,8 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <%= stylesheet_link_tag "application", "http://yandex.st/highlightjs/6.2/styles/default.min.css", :media => "all" %>
-    <%= javascript_include_tag "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" %>
-    <%= javascript_include_tag "http://yandex.st/highlightjs/6.2/highlight.min.js" %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+
     <!-- Le fav and touch icons -->
     <link href="images/favicon.ico" rel="shortcut icon">
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
@@ -29,28 +28,22 @@
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
-            <div class="tag_search"><%= text_field_tag :ts, nil, placeholder:"Search Tags", class: "eighty-percent" %></div>
-            <ul id="tag_list" class="nav nav-list">
-              <%= render partial: 'questions/tag', collection: Tag.order(:name).limit(50) %>
+            <ul class="nav nav-list">
+              <li class="nav-header">Karthikeyan A K</li>
+                <li><%= link_to "Profile", "/path1"  %></li>
+                <li><%= link_to "My Questions", "/path2"  %></li>
+                <li><%= link_to "My Answers", "/path3"  %></li>
+                <li><%= link_to "My Tags", "/path3"  %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
-        <% if notice %>
-          <div class="alert fade in">
-            <a href="#" data-dismiss="alert" class="close">×</a>
-            <ul>
-              <%= raw notice %>
-            </ul>
-          </div>
-        <% end %>
           <%= yield %>
         </div>
       </div><!--/row-->
 
       <footer>
-        <hr />
-        <%= link_to(image_tag("http://www.initializr.com/front/img/github-logo.png", width: "100px", height: "200px"), "http://github.com/mindaslab/qua", class: "image")  %>
+        <p>&copy; Company 2012</p>
       </footer>
 
     </div> <!-- /container -->
@@ -59,7 +52,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
-    <script>hljs.initHighlightingOnLoad();</script>
 
   </body>
 </html>

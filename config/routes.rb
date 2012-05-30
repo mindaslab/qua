@@ -1,5 +1,13 @@
 Qua::Application.routes.draw do
 
+  get "user/profile"
+
+  get "user/questions"
+
+  get "user/answers"
+
+  get "user/tags"
+
   get "tag/questions"
   
   get "tag/search"
