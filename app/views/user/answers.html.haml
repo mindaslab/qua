@@ -1,0 +1,7 @@
+%h1.grey-heading
+  My Answers
+
+.answer_wrapper
+  =render partial: 'answers/answer_view', collection: @answers
+
+=will_paginate @answers

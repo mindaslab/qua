@@ -22,7 +22,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Karthikeyan A K</li>
-                <li><%= link_to "Profile", profile_path(current_user.profile) %></li>
+                <li><%= link_to "Profile", new_profile_path %></li>
                 <li><%= link_to "My Questions", action: :questions, controller: :user  %></li>
                 <li><%= link_to "My Answers", action: :answers, controller: :user  %></li>
                 <li><%= link_to "My Tags", action: :tags, controller: :user  %></li>
