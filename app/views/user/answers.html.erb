@@ -1,2 +1,7 @@
 <h1 class="grey-heading">My Answers</h1>
-<p>Find me in app/views/user/answers.html.erb</p>
+
+<div class="answer_wrapper">
+  <%= render partial: 'answers/answer_view', collection: @answers %>
+</div>
+
+<%= will_paginate @answers %>

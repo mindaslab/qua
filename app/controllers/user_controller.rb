@@ -7,7 +7,7 @@ class UserController < ApplicationController
   end
 
   def answers
-    @answers = current_user.answers.order('created_at desc').paginate(:page => params[:page], :per_page => 20)
+    @answers = current_user.answers.order('created_at desc').paginate(:page => params[:page], :per_page => 10)
   end
 
   def tags
