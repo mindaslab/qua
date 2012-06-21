@@ -4,6 +4,11 @@
     .control-group
       = f.label :content, "Answer", class: "control-label"
       .controls
+        %div#a_chars_left
+          %span#char_count
+            = 5000 - @answer.content.length 
+          %span
+            characters left
         = f.text_area :content, class: 'text_area big-width', rows: 15
     .form-actions
       = f.submit "Update Answer", class: "btn btn-primary"

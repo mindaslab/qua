@@ -17,6 +17,10 @@
     <div class="control-group">
       <%= f.label :content, "Question", :class => 'control-label' %>
       <div class="controls">
+        <div id="q_chars_left">
+          <span id="char_count"><%= 5000 - ((@question.content.to_s.empty?) ? 0 : @question.content.length) %></span>
+          <span> characters left</span>
+        </div>
         <%= f.text_area :content, :class => 'text_area big-width', rows: 15 %>
       </div>
     </div>

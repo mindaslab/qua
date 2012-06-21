@@ -1,4 +1,4 @@
-<%= render partial: 'question_view' %>
+<%= render partial: 'question_view', object: @question %>
 
 <h1 class="grey-heading">Answers</h1>
 <%= render @answers %>
@@ -14,6 +14,10 @@
     <div class="control-group">
       <%= f.label :content, "Answer", class: "control-label" %>
       <div class="controls">
+        <div id="a_chars_left">
+          <span id="char_count">5000</span>
+          <span> characters left</span>
+        </div>
         <%= f.text_area :content, :class => 'text_area big-width', rows: 15 %>
       </div>
       <div class="form-actions">
