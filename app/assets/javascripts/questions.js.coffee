@@ -6,3 +6,8 @@ $(document).ready ->
   $('#question_content').keyup ->
     len = $('#question_content').val().length
     $('#char_count').html(""+(5000-len))
+  
+  $('#question_tag_string').keyup ->
+    number_of_tags = $('#question_tag_string').val().split(',').length
+    $('#tag_error').show() if number_of_tags > 10
+    $('#tag_error').hide() if number_of_tags <= 10 

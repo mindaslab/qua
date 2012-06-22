@@ -28,10 +28,10 @@
     <div class="control-group">
       <%= f.label :content, raw("Tags<br />(Comma Seperated)"), :class => 'control-label' %>
       <div class="controls">
+        <div class="big_grey" id="tag_error">Only 10 tags are allowed</div>
         <%= f.text_area :tag_string, :class => 'text_area big-width', rows: 5 %>
       </div>
     </div>
-
     <div class="form-actions">
       <%= f.submit nil, :class => 'btn btn-primary' %>
       <%= link_to 'Cancel', questions_path, :class => 'btn' %>
